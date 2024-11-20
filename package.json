@@ -1,5 +1,5 @@
 {
-  "name": "checkenv",
+  "name": "dotenv-verifier",
   "version": "1.0.0",
   "description": "A simple npm package to validate required environment variables and prevent runtime errors.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/preetiGusain/checkEnv.git"
+    "url": "git+https://github.com/preetiGusain/dotenv-verifier.git"
   },
   "keywords": [
     "environment",

@@ -1,6 +1,6 @@
 const dotenv = require('dotenv');
 
-function checkEnv(requiredVariables) {
+function checkEnvVariables(requiredVariables) {
     //Loading environment variable from .env file
     const result = dotenv.config;
 
@@ -23,4 +23,4 @@ function checkEnv(requiredVariables) {
     console.log("All required environment variables are set.");
 };
 
-module.exports = checkEnv;
+module.exports = checkEnvVariables;

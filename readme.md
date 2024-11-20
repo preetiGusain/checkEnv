@@ -1,10 +1,10 @@
-# checkenv
+# dotenv-verifier
 
  A simple Node.js package to validate required environment variables in your project.
 
 
 ```
-const checkEnv = require('checkenv');
+const checkEnvVariables = require('dotenv-verifier');
 
 
 //List of required environment variables
@@ -12,7 +12,7 @@ const requiredVariables = ['DB_HOST', 'DB_USER', 'DB_PASS'];
 
 
 //Run the check
-checkEnv(requiredVariables);
+checkEnvVariables(requiredVariables);
 ```
 
 ## Installation
@@ -26,7 +26,7 @@ If this is a brand new project, make sure to create a package.json first with th
 Installation is done using the ```npm install``` command:
 
 ```
-$ npm install checkenv
+$ npm install dotenv-verifier
 ```
 ## Features
 
@@ -43,7 +43,7 @@ $ npm install checkenv
 1. Install the package:
 
 ```
-npm install checkenv
+npm install dotenv-verifier
 ```
 
 2. Create a ```.env``` file in your project root if it doesn't exist already:
@@ -53,10 +53,10 @@ DB_HOST=localhost
 DB_USER=root
 DB_PASS=mysecretpassword
 ```
-3. In your application, use ```checkEnv``` to validate the required variables:
+3. In your application, use ```dotenv-verifier``` to validate the required variables:
 
 ```
-const checkEnv = require('checkenv');
+const checkEnvVariables = require('dotenv-verifier');
 
 
 // List of required environment variables
@@ -64,14 +64,14 @@ const requiredVariables = ['DB_HOST', 'DB_USER', 'DB_PASS'];
 
 
 // Run the check
-checkEnv(requiredVariables);
+checkEnvVariables(requiredVariables);
 ```
 
 4. If any required environment variables are missing or empty, the program will log the errors and exit.
 
 ## How It Works
 
-1. The checkEnv function loads environment variables from the .env file using the dotenv package.
+1. The dotenv-verifier function loads environment variables from the .env file using the dotenv package.
 
 2. It checks for the presence of each required environment variable in the process environment.
 
