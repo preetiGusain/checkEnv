@@ -1,26 +1,20 @@
-const dotenv = require('dotenv');
+const chalk = require("chalk");
 
 function checkEnvVariables(requiredVariables) {
-    //Loading environment variable from .env file
-    const result = dotenv.config;
-
-    if(result.error) {
-        console.error("Error: unable to load .env file");
-        process.exit(1);
-    }
-
+    // check for variables
     const missingVariables = requiredVariables.filter(
         (variable) => !process.env[variable] || process.env[variable].trim() == ''
     );
 
     if(missingVariables.length > 0) {
-        console.log("Error: Missing required environment variables:");
+        console.log(chalk.red(`dotenv-verifier found ${missingVariables.length} error!`));
+        console.log(chalk.yellow("Error: Missing required environment variables:"));
         missingVariables.forEach((variable) => {
-            console.log(`- ${variable}`);
+            console.log(chalk.yellow(`- ${variable}`));
         });
         process.exit(1);
     }
-    console.log("All required environment variables are set.");
+    console.log(chalk.green("dotenv-verifier - All required environment variables are set."));
 };
 
 module.exports = checkEnvVariables;

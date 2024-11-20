@@ -30,13 +30,11 @@ $ npm install dotenv-verifier
 ```
 ## Features
 
-1. Loads environment variables from the .env file.
+1. Ensures required variables are set in the environment. [Either from a .env file or Command Line]
 
-2. Ensures required variables are set in the environment.
+2. Exits the program and displays an error if any required variables are missing or empty.
 
-3. Exits the program and displays an error if any required variables are missing or empty.
-
-4. Simple and easy to integrate into Node.js applications
+3. Simple and easy to integrate into Node.js applications
 
 ## Usage
 
@@ -71,13 +69,11 @@ checkEnvVariables(requiredVariables);
 
 ## How It Works
 
-1. The dotenv-verifier function loads environment variables from the .env file using the dotenv package.
+1. It checks for the presence of each required environment variable in the process environment.
 
-2. It checks for the presence of each required environment variable in the process environment.
+2. If any variables are missing or empty, it logs the names of those variables and exits the program with an error message.
 
-3. If any variables are missing or empty, it logs the names of those variables and exits the program with an error message.
-
-4. If all variables are correctly set, a success message is logged.
+3. If all variables are correctly set, a success message is logged.
 
 ## Philosophy
 

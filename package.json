@@ -1,6 +1,6 @@
 {
   "name": "dotenv-verifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple npm package to validate required environment variables and prevent runtime errors.",
   "main": "index.js",
   "scripts": {
@@ -31,6 +31,6 @@
   },
   "homepage": "https://github.com/preetiGusain/checkEnv#readme",
   "dependencies": {
-    "dotenv": "^16.4.5"
+    "chalk": "^4.1.2"
   }
 }
