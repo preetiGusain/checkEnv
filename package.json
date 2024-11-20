@@ -24,10 +24,13 @@
     "runtime-validation",
     "environment-config"
   ],
-  "author": "validation",
+  "author": "Preeti Gusain",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/preetiGusain/checkEnv/issues"
   },
-  "homepage": "https://github.com/preetiGusain/checkEnv#readme"
+  "homepage": "https://github.com/preetiGusain/checkEnv#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
 }
