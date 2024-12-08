@@ -2,6 +2,12 @@
 
  A simple Node.js package to validate required environment variables in your project.
 
+Error
+![Error](error.jpeg)
+
+Success
+![Success](dotenv.png)
+
 
 ```
 const checkEnvVariables = require('dotenv-verifier');
