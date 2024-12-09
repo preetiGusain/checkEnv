@@ -1,6 +1,6 @@
 {
   "name": "dotenv-verifier",
-  "version": "1.0.3",
+  "version": "1.0.1",
   "description": "A simple npm package to validate required environment variables and prevent runtime errors.",
   "main": "index.js",
   "scripts": {
