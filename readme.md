@@ -3,7 +3,7 @@
  A simple Node.js package to validate required environment variables in your project.
 
 Error
-![Error](error.jpeg)
+![Error](error.png)
 
 Success
 ![Success](dotenv.png)
